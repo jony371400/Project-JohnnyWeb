@@ -25,13 +25,13 @@
 
         .content-zone-text{
             background-color:rgb(241, 233, 233);
-            width: 50%;
+            width: 100%;
             height: 350px;
         }
 
         .content-zone-pic{
             background-color:rgb(241, 233, 233);
-            width: 50%;
+            width: 100%;
             height: 350px;             
         }
 
@@ -56,6 +56,25 @@
             font-size: 16px;
             padding: 20px 15px;
         }
+
+
+        .column {
+            float: left;
+            width: 50%;
+            padding: 15px;
+        }
+
+            .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width:600px) {
+            .column {
+                width: 100%;
+            }
+        }
     </style>
 
     <body>          
@@ -67,6 +86,38 @@
 
         <div class="content" style="height: 700px;">
 
+            <div class="row">
+                <div class="column">
+                    <div class="content-zone-pic" >
+                        <img src="Pic/IMG1.JPG" class="img">
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <div class="content-zone-text">
+                        <p class="article">
+                            I'm Johnny and come from Tainan, I hold a bachelor's degree with a major in Computer Science & Information Engineering and entered the medical industry when I was during at school. I went all the way from a work-student to a full-time staff. Later, I took over the deputy manager under the strong recommendation and support of the manager. In addition,these experience have provided me with an in-depth knowledge of effective management strategy, marketing planning, and integration technique.
+                        </p>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="row">  
+                <div class="column">
+                    <div class="content-zone-text">
+                        <p class="article">
+                            In my current position at Yinghan Technology, the main work content is Human Machine Interface, Design and Development. In this job, I understand the importance of UI/UX Design. Not only image beautiful, but also practical, logical and reliable operability. In this ever-changing technological world, I also understand the importance of learning. I will also take some science and technology newspapers or learn new technologies for reference at rest. I will greatly appreciate the opportunity to speak with you in person in an interview, thank you.
+                        </p>
+                    </div>     
+                </div>
+                <div class="column">
+                    <div class="content-zone-pic" >
+                        <img src="Pic/IMG3.JPG" class="img">
+                    </div>
+                </div>
+            </div>
+
+<!--             
             <div class="content1" >
                 <div class="content-zone-pic" >
                     <img src="Pic/IMG1.JPG" class="img">
@@ -82,25 +133,22 @@
                 <div class="content-zone-text">
                     <p class="article">
                         In my current position at Yinghan Technology, the main work content is Human Machine Interface, Design and Development. In this job, I understand the importance of UI/UX Design. Not only image beautiful, but also practical, logical and reliable operability. In this ever-changing technological world, I also understand the importance of learning. I will also take some science and technology newspapers or learn new technologies for reference at rest. I will greatly appreciate the opportunity to speak with you in person in an interview, thank you.
-                        </p>
-                </div>
-                
+                    </p>
+                </div>                
                 <div class="content-zone-pic" >
                     <img src="Pic/IMG3.JPG" class="img">
                 </div>
             </div>
-        </div>
+        </div> -->
         
         <div class="footer-line">
             <i class="fab fa-line"></i>
             Line :            
         </div>        
+
         <div class="footer-facebook">
             <i class="fab fa-facebook-square"></i>
             facebook : 
         </div>
-        
-        
-
     </body>
 </html>
