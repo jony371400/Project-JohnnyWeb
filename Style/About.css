@@ -1,0 +1,140 @@
+/* Preset */
+*{
+    box-sizing: border-box;
+}
+
+.body {
+   margin: 0;
+   padding: 0;
+}
+
+/* Menu */
+.topnav {
+    overflow: hidden;
+    background-color: rgb(12, 13, 14);
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #c1e2f1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    /* 進入時事件 */
+    background-color: #ddd;
+    color: black;
+}
+
+.content{
+    height: 78vh;
+    background-color: rgb(241, 233, 233);
+}
+
+.footer-line {    
+    height: 10vh; 
+    width: 100%;
+    background-color: rgb(69, 236, 69);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 10vh;
+} 
+
+.footer-facebook {   
+    height: 10vh; 
+    width: 100%;
+    background-color: rgb(92, 92, 230);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 10vh;
+}
+
+.container-content {
+    height: 78vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 39vh 39vh;
+}
+
+.item1 {
+    margin: 5px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.item2 {
+    margin: 5px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.item3 {
+    margin: 5px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.item4 {
+    margin: 5px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.img {
+    width: 39vh;
+    height: 38vh;
+    padding: 10px;
+    border-radius: 50%;
+    border: 0px solid rgb(8, 12, 130);
+    display: block;
+    margin: auto;
+}
+
+.article {
+    font-family: 'Kirang Haerang', cursive;
+    font-size: 16px;
+    padding: 20px 15px;
+}
+
+@media screen and (max-width:600px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+
+    .container-content {
+        height: 160vh;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 40vh 40vh 40vh 40vh;
+    }
+
+    .item1 {
+        margin: 0px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .item2 {
+        margin: 0px;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .item3 {
+        margin: 0px;
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    .item4 {
+        margin: 0px;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+}

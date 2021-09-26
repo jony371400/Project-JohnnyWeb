@@ -1,0 +1,98 @@
+/* Preset */
+*{
+    box-sizing: border-box;
+}
+
+.body {
+   margin: 0;
+   padding: 0;
+}
+
+/* Menu */
+.topnav {
+    overflow: hidden;
+    background-color: rgb(12, 13, 14);
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #c1e2f1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    /* 進入時事件 */
+    background-color: #ddd;
+    color: black;
+}
+
+.content{
+    height: 78vh;
+    background-color: rgb(241, 233, 233);
+}
+
+.content-text {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Kirang Haerang', cursive;
+    text-align: center;
+    line-height: 77vh;
+    background-image: url("/Pic/Johnny.png");
+    background-repeat: no-repeat;
+    background-size: 100% 77vh;
+    opacity: 33%;
+}
+
+.footer-line {    
+    height: 10vh; 
+    width: 100%;
+    background-color: rgb(69, 236, 69);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 10vh;
+}    
+
+.footer-facebook {   
+    height: 10vh; 
+    width: 100%;
+    background-color: rgb(92, 92, 230);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 10vh;
+}
+
+/* RWD */
+@media screen and (max-width:600px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+
+    .content{
+        height: 77vh;
+        background-color: rgb(241, 233, 233);
+    }
+
+    .content-text {
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+        font-weight: bold;
+        font-style: italic;
+        font-family: 'Kirang Haerang', cursive;
+        text-align: center;
+        height: 77vh;
+        line-height: 77vh;
+        background-image: url("/Pic/Johnny.png");
+        background-repeat: no-repeat;
+        background-size: 100% 77vh;
+        opacity: 33%;
+        overflow:hidden; 
+    }
+}
